@@ -6,7 +6,12 @@
 </style>
 </head>
 <body>
-  <h1>Quiz 2</h1>
+  <% @test.each do |test| %>
+    <div>
+    <h1><%= @test.subject %></h1>
+    <h2><%= @test.grade %></h2>
+  </div>
+  <% end %>
 
 </body>
 </html>

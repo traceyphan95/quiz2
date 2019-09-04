@@ -12,4 +12,41 @@
   <body>
     <%= yield %>
   </body>
+<header class="header">
+  <div class="col-3">
+    <%= link_to new_test_path, class: 'logo' do %>
+    <div class="circle">
+      <br />
+      Enter
+      <br />
+      Test
+      <br />
+      Scores
+    </div>
+    <% end %>
+  </div>
+  <div class="col-4 slogan">
+    Test for the Best
+  </div>
+  <div class="col-5 links">
+    <%= link_to 'See Scores', root_path %>
+  </div>
+</header>
+
+
+
+
 </html>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+
+      </div>
+      <div class="col-6 footer-blurb">
+        From Anthropology to Zoology, we got you covered - <a href="https://online.bootcampspot.com">Better Grades are on the way</a>
+      </div>
+    </div>
+  </div>
+</div>

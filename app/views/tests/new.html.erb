@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<h1>Enter Your Test Details</h1>
+<%= simple_form_for @test do |f| %>
+  <%= f.input :subject %>
+  <%= f.input :grade %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %>
+<body>
+  <h1><%= @test.subject %></h1>
+  <h2><%= @test.grade %></h2>
+</body>
+</html>
+
+
+
